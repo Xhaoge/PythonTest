@@ -1,0 +1,80 @@
+{
+  "maxSeats": 9,
+  "msg": "success",
+  "routing": {
+    "adultPrice": 2235,
+    "adultTax": 23,
+    "adultTaxType": 0,
+    "applyType": 0,
+    "childPrice": 2235,
+    "childTax": 23,
+    "childTaxType": 0,
+    "codeShare": false,
+    "combineIndexs": [
+      []
+    ],
+    "currency": "RMB",
+    "data": "H4sIAAAAAAAAAEVQu1LDQAz8F9W253TvcxcHY8AkhJBAoPFcbFNSpWP4dzYKj2Z3Z6Vb6fRJC6qp6fthuT4MWnFSkR0VtGCqtTYOSv8pQ7UCORgG7H84XOyIJB6zCbPT6uizddHH95R4dDkck5t01Ehu0LbpWJmhHTadtjy0Z/eS3VihJXpOp4/5hMoVdLvfQrVUhxgqZwu6lrZO8EbwVvCO6mS8NrGgHtv5WDE2vIeski5o9e+tf70HebgRfMSs1dBh1la2hHiSwo5qBuIoNProVbZTmbNPpZ2PsYxuMmWexzCy0qgbvNudz8YuVIwLePaYtMMfWSFtL5nPgi+CB8l/Ff0G7TwbZ1XiqO3XN9lU3celAQAA",
+    "fareType": 1,
+    "fromSegments": [
+      {
+        "aircraftCode": "319",
+        "arrAirport": "USM",
+        "arrTime": "201908150705",
+        "cabin": "M",
+        "cabinClass": 1,
+        "carrier": "PG",
+        "codeshare": false,
+        "depAirport": "BKK",
+        "depTime": "201908150600",
+        "flightNumber": "PG103",
+        "operatingCarrier": "PG",
+        "stopCities": ""
+      },
+      {
+        "aircraftCode": "319",
+        "arrAirport": "CNX",
+        "arrTime": "201908151150",
+        "cabin": "G",
+        "cabinClass": 1,
+        "carrier": "PG",
+        "codeshare": false,
+        "depAirport": "USM",
+        "depTime": "201908151000",
+        "flightNumber": "PG241",
+        "operatingCarrier": "PG",
+        "stopCities": ""
+      }
+    ],
+    "nationalType": 0,
+    "nationality": "",
+    "priceType": 0,
+    "retSegments": [],
+    "sameCarrier": true,
+    "sellLuggage": false,
+    "suitAge": "",
+    "ticketInvoiceType": 1,
+    "ticketTimeLimit": 10000,
+    "validatingCarrier": "PG"
+  },
+  "rule": {
+    "baggage": "-20;-20",
+    "endorse": "*-0-*",
+    "endorsement": 0,
+    "hasBaggage": 1,
+    "hasEndorse": 0,
+    "hasNoShow": 0,
+    "hasRefund": 0,
+    "noShowLimitTime": 72,
+    "other": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.境外开票，无法打印纸质版行程单，有电子版报销凭证。3.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）4.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。6.订单支付成功后，无法更改乘机信息。7.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 ",
+    "partEndorse": 0,
+    "partEndorsePrice": 0,
+    "partRefund": 0,
+    "partRefundPrice": 0,
+    "penalty": 0,
+    "refund": "*-0-*",
+    "specialNoShow": 3
+  },
+  "sessionId": "1354089251",
+  "status": 0
+}

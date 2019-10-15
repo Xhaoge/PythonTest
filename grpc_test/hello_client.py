@@ -3,7 +3,6 @@
 
 from __future__ import print_function
 import logging
-
 import grpc
 from grpc_test.rpc_package.helloworld_pb2  import HelloRequest,HelloReply
 from grpc_test.rpc_package.helloworld_pb2_grpc import HelloWoeldServiceStub

@@ -1,0 +1,3 @@
+[submodule "pythonBase/pythonXGit/sh"]
+	path = pythonBase/pythonXGit/sh
+	url = https://github.com/Xhaoge/sh.git

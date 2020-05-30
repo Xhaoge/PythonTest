@@ -14,7 +14,12 @@ from requests.exceptions import RequestException
 def get_one_page(url):
     try:
         response = requests.get(url)
+        print("url: ",url)
         if response.status_code == 200:
+            response.encoding = "utf-8"
+            print(response.text)
+            print(type(response.text))
+            print(response.encoding)
             return response.text
         return None
     except RequestException as e:
@@ -43,17 +48,20 @@ def write_to_file(content):
         f.write(json.dumps(content,ensure_ascii = False)+'\n')
         f.close()
 
-def main(offset):
-    url = "http://maoyan.com/board/4?offset="+str(offset)
+def main():
+    # url = "http://maoyan.com/board/4?offset="+str(offset)
+    url = "https://www.baidu.com"
     html = get_one_page(url)
-    for item in parse_one_page(html):
-        print(item)
-        write_to_file(item)
+    # print("html: ",html)
+    # print(html)
+    # for item in parse_one_page(html):
+    #     write_to_file(item)
 
 
 if __name__ == "__main__":
+    main()
     # for i in range(0,100,10):
     #     main(i)
-    # 多进程替代单进程的爬取内容，不足之处便是顺序的问题；
-    pool = Pool()
-    pool.map(main,[i for i in range(0,100,10)])
+    # # 多进程替代单进程的爬取内容，不足之处便是顺序的问题；
+    # pool = Pool()
+    # pool.map(main,[i for i in range(0,100,10)])

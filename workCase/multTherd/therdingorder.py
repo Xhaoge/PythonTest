@@ -19,11 +19,11 @@ class Iwofly():
         searchd = {
                     "Cid": "iwoflyCOM",
                     "TripType": "1",
-                    "FromCity": "TPE",
-                    "ToCity": "HKG",
-                    "FromDate": "20201117",
+                    "FromCity": "HKG",
+                    "ToCity": "ICN",
+                    "FromDate": "20201017",
                     "RetDate": "20201015",
-                    "Currency": "TWD",
+                    "Currency": "CNY",
                     "AdultNumber": 1,
                     "ChildNumber": 0,
                     "InfantNumber": 0,
@@ -34,7 +34,7 @@ class Iwofly():
         print("================================================")
         print(type(res))
         print(type(res.json()))
-        # print("search: ",res.json())
+        print("search: ",res.json())
         print(type(res.text))
         self.search_response = res.json()
     
@@ -109,16 +109,14 @@ class Iwofly():
                     "upstreamInfo": {
                         "cid": "iwoflyCOM",
                         "extraAttributes": {},
-                        "name": "iwoflyCOM"
+                        "name": "iwoflyCOM"}
                     }
-
         res = requests.post(url=ticketing_url, data=json.dumps(ticketingd))
         self.ticketing_response = res.json()
         print("================================================")
         print("self.ticketing_response :",self.ticketing_response)
-}
 
-    def run(slef):
+    def run(self):
         self.search()
         self.verify()
         # time.sleep(5)
@@ -127,7 +125,8 @@ class Iwofly():
     
 if __name__ == "__main__":
     xx = Iwofly()
-    xx.search()
+    xx.run()
+    # xx.search()
     # xx.verify()
     # time.sleep(5)
     # xx.order()
